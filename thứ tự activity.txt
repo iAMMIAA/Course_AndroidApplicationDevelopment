@@ -1,0 +1,35 @@
+
+
+----------------------------------------------
+thứ tự:
+Run
+Activity1: onCreate
+Activity1: onStart
+Activity1: onResume
+
+(Nhấn button "đến activity2" trên layout của activity1)
+=> Activity2: onCreate
+=> Activity2: onStart
+=> Activity2: onResume
+=> Activity1: onPause
+=> Activity1: onStop
+
+(Nhấn button "đến activity1" trên layout của activity2)
+=> Activity1: onCreate
+=> Activity1: onStart
+=> Activity1: onResume
+=> Activity2: onPause
+=> Activity2: onStop
+
+(Người dùng nhấn nút Back để quay lại màn hình chính lần 1.)
+=> Activity1: onDestroy
+=> Activity2: onStart
+=> Activity2: onResume
+=> Activity1: onPause
+=> Activity1: onStop
+(Người dùng nhấn nút Back để quay lại màn hình chính lần 2.)
+=> Activity2: onDestroy
+=> Activity1: onStart
+=> Activity1: onResume
+=> Activity2: onPause
+=> Activity2: onStop

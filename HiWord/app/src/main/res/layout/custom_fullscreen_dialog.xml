@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <!-- Nội dung của dialog -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <!-- Nội dung dialog -->
+        <TextView
+            android:id="@+id/dialogContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nội dung dialog ở đây."
+            android:textSize="18sp"
+            android:layout_centerInParent="true" />
+
+        <!-- Button để đóng dialog -->
+        <Button
+            android:id="@+id/closeDialogButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialogContent"
+            android:layout_centerHorizontal="true"
+            android:text="Đóng" />
+    </RelativeLayout>
+</RelativeLayout>

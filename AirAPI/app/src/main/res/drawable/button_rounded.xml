@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="25dp" /> <!-- Điều này sẽ tạo góc bo tròn với bán kính 20dp -->
+            <solid android:color="@color/blue4" /> <!-- Màu nền của Button -->
+        </shape>
+    </item>
+</selector>
